@@ -1,5 +1,5 @@
 {% set name = "microtc" %}
-{% set version = "2.4.4" %}
+{% set version = "2.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/microtc-{{ version }}.tar.gz
-  sha256: 96c602908fe78ee7b75ce66ed1b4b5eba7cd9dd77b1b8eccbd7e3a046dffb655
+  sha256: f09534c15cbe6a481a88e681117a9602eb530030a02ddb7e361d9fe6fba7a21a
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
