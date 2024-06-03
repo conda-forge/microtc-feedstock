@@ -19,6 +19,9 @@ requirements:
     - python >=3.7
     - pip
     - scikit-learn
+  run:
+    - python
+    - scikit-learn
 
 test:
   imports:
