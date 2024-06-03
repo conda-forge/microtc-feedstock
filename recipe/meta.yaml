@@ -10,16 +10,14 @@ source:
   sha256: cb5db421deee70ecc0ed335896228b13d156f5939a0022559aa43d316fab0ed4
 
 build:
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - scikit-learn
     - python
     - pip
-  run:
-    - python
     - scikit-learn
 
 test:
